@@ -1,0 +1,11 @@
+.sidebar {
+    width: 12rem;
+}
+
+.main {
+    flex: 1;
+}
+
+.header {
+    height: 4rem;
+}

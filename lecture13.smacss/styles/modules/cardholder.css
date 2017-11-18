@@ -1,0 +1,10 @@
+.cardholder {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5rem;
+}
+
+.cardholder .card {
+    margin: 0.5rem;
+    flex: 1;
+}
