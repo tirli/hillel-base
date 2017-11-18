@@ -1,0 +1,15 @@
+.avatar {
+    width: 2rem;
+}
+
+.notification-circle {
+    width: 4rem;
+    height: 4rem;
+    position: relative
+}
+
+.notification-circle .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
