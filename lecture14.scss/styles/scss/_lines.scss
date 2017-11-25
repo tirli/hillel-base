@@ -1,0 +1,76 @@
+$lines-colors: (
+1: #418c8c,
+2: #3d8585,
+3: #3b7f7e,
+4: #377676
+);
+
+.line {
+  flex: 1;
+  display: flex;
+  
+  @each $number, $color in $lines-colors {
+    &.line-#{$number} {
+      background-color: $color;
+    }
+  }
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  
+  .tip {
+    width: 20rem;
+    position: relative;
+  }
+  
+  @for $i from 1 through 8 {
+    .tip-#{$i} {
+      color: red;
+      &:before {
+        content: '#{$i}';
+        position: absolute;
+        color: white;
+        opacity: 0.5;
+        font-size: 5rem;
+        transform: translate(50%, -50%);
+      }
+    }
+  }
+}
+
+
+
+@mixin does-parent-exist {
+  @if & {
+    &:hover {
+      color: red;
+    }
+  } @else {
+    a {
+      color: red;
+    }
+  }
+}
+
+// Just for sample
+.existing-parent {
+  @if & {
+    &:hover {
+      color: red;
+    }
+  } @else {
+    a {
+      color: red;
+    }
+  }
+}
+
+button {
+  @include does-parent-exist;
+}
+
+button {
+  @extend .existing-parent;
+}

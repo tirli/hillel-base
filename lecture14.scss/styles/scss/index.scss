@@ -1,0 +1,29 @@
+@import 'reset';
+@import 'variables';
+@import 'lines';
+
+html, body {
+    height: 100%;
+    font-size: 16px;
+}
+
+.container {
+    background-color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .header {
+        color: white;
+        text-align: center;
+    }
+
+    .subheader {
+        @extend .header;
+        font-size: 1.5rem;    
+        margin-bottom: 0.5rem;    
+    }
+}
+
+
+
