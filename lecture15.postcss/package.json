@@ -1,0 +1,25 @@
+{
+  "name": "lecture15.postcss",
+  "version": "0.0.1",
+  "description": "Teaching project",
+  "main": " ",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "grunt",
+    "start": "grunt dev"
+  },
+  "author": "Kate Lizogubova",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.9.0",
+    "pixrem": "^4.0.1",
+    "postcss-cssnext": "^3.0.2",
+    "stylelint": "^8.3.1",
+    "stylelint-config-standard": "^18.0.0"
+  },
+  "dependencies": {}
+}
